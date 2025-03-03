@@ -1,9 +1,9 @@
 name: Docker Build and Push
 
 on:
-  push:
-    branches:
-      - main  # 根据你的主分支名称调整（可能是 master）
+  release:
+    types:
+      - published  # 当发布新的 release 时触发
   workflow_dispatch:
     inputs:
       custom_tag:
