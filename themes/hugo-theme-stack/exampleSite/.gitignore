@@ -23,12 +23,8 @@ _testmain.go
 *.test
 
 public
+themes
 resources
 
 assets/jsconfig.json
 .DS_Store
-
-# act 测试脚本配置
-.actrc
-
-.chglog
