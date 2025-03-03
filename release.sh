@@ -25,7 +25,7 @@ git push origin main --follow-tags
 
 echo "创建 GitHub Release..."
 gh release create "v${VERSION}" \
-    --title "Version ${VERSION}"
+    --title "20${VERSION}"
 
 echo "✅ 版本 $VERSION 已成功发布！"
 echo "🔗 Release 地址: https://github.com/yeisme0/yeisme0.xyz/releases/tag/v${VERSION}"
