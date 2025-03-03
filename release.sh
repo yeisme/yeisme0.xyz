@@ -21,16 +21,11 @@ git tag -a "v${VERSION}" -m "Release version ${VERSION}" --quiet
 
 # 推送代码和标签
 echo "推送代码和标签到远程仓库..."
-git push origin main --follow-tags --quiet
+git push origin main --follow-tags
 
 echo "创建 GitHub Release..."
 gh release create "v${VERSION}" \
-    --title "Version ${VERSION}" \
-    --notes-file CHANGELOG.md \
-    "release/app-v${VERSION}.tar.gz"
-
-# 清理临时文件
-rm -rf release/
+    --title "Version ${VERSION}"
 
 echo "✅ 版本 $VERSION 已成功发布！"
 echo "🔗 Release 地址: https://github.com/yeisme0/yeisme0.xyz/releases/tag/v${VERSION}"
