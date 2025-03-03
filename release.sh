@@ -16,8 +16,8 @@ if [[ -n $(git status --porcelain) ]]; then
 fi
 
 # 创建 Git 标签
-echo "创建标签 20$VERSION..."
-git tag -a "20${VERSION}" -m "${VERSION}"
+echo "创建标签 v$VERSION..."
+git tag -a "v${VERSION}" -m "${VERSION}"
 
 # 推送代码和标签
 echo "推送代码和标签到远程仓库..."
@@ -25,7 +25,6 @@ git push origin main --follow-tags
 
 echo "创建 GitHub Release..."
 gh release create "v${VERSION}" \
-    --title "20${VERSION}"
+    --title "v${VERSION}"
 
 echo "✅ 版本 $VERSION 已成功发布！"
-echo "🔗 Release 地址: https://github.com/yeisme0/yeisme0.xyz/releases/tag/v${VERSION}"
