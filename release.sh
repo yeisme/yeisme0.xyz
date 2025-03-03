@@ -17,7 +17,7 @@ fi
 
 # 创建 Git 标签
 echo "创建标签 v$VERSION..."
-git tag -a "v${VERSION}" -m "Release version ${VERSION}" --quiet
+git tag -a "v${VERSION}" -m "Release version ${VERSION}"
 
 # 推送代码和标签
 echo "推送代码和标签到远程仓库..."
