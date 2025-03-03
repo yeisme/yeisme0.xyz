@@ -1,0 +1,22 @@
+# 排除版本控制和IDE文件
+.git/
+.idea/
+.vscode/
+
+# 排除Hugo缓存和临时目录
+/resources/_gen/
+/public/
+
+# 排除环境文件和敏感数据
+.env
+
+# 排除操作系统无关文件
+Dockerfile
+.dockerignore
+
+# 排除Markdown和文档
+README.md
+LICENSE
+
+# act 测试脚本配置
+.actrc
