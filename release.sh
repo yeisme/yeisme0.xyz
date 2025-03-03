@@ -16,8 +16,8 @@ if [[ -n $(git status --porcelain) ]]; then
 fi
 
 # 创建 Git 标签
-echo "创建标签 v$VERSION..."
-git tag -a "v${VERSION}" -m "Release version ${VERSION}"
+echo "创建标签 20$VERSION..."
+git tag -a "20${VERSION}" -m "${VERSION}"
 
 # 推送代码和标签
 echo "推送代码和标签到远程仓库..."
