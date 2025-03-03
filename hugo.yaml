@@ -44,6 +44,12 @@ permalinks:
   page: /:slug/
 
 params:
+  beian:
+    icp: "粤ICP备2024350162号-1"
+    gongan:
+    # 广东省需额外添加公安备案
+      # number:
+      # url:
   mainSections:
     - post
   featuredImageField: image
