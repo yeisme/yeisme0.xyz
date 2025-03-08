@@ -1,0 +1,6 @@
+:80 {
+    root * /usr/share/caddy
+    file_server
+    # 健康检查路由
+    respond /health "OK"
+}
