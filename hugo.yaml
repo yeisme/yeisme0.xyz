@@ -31,7 +31,7 @@ languages:
 services:
   # Change it to your Disqus shortname before using
   disqus:
-    shortname: "hugo-theme-stack"
+    shortname: "yeisme0"
   # GA Tracking ID
   googleAnalytics:
     id:
@@ -226,7 +226,7 @@ menu:
         icon: Bilibili
     - identifier: wechat
       name: y1304192594
-      # url:
+      url: https://github.com/yeisme/yeisme0.xyz/blob/main/assets/other/wechat_yeisme0.jpg?raw=true
       params:
         icon: wechat
     - identifier: Gmail

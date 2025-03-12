@@ -27,33 +27,48 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 
 ## 📊 个人数据
 
-| _项目_   | _信息_                                             |
-| -------- | -------------------------------------------------- |
-| 年龄     | 21                                                 |
-| 学校     | 广州大学                                           |
-| 专业     | 通信工程                                           |
-| 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com>  |
-| Github   | <https://github.com/yeisme>                        |
-| 个人网站   | <https://yeisme0.xyz>                       |
-| 求职意向 | 后端开发, 云原生开发,  <br /> 大数据开发, 开源运营 |
+| _项目_   | _信息_                                            |
+| -------- | ------------------------------------------------- |
+| 年龄     | 21                                                |
+| 学校     | 广州大学                                          |
+| 专业     | 通信工程                                          |
+| 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com> |
+| Github   | <https://github.com/yeisme>                       |
+| 个人网站 | <https://yeisme0.xyz>                             |
+| 求职意向 | 后端开发, 云原生开发, <br /> 大数据开发, 开源运营 |
 
 ## 🌐 数据展示
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=yeisme" />
-</a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&langs_count=8&card_width=320" />
-</a>
+<div align="center">
+  <!-- GitHub统计 -->
+  <a href="https://github.com/yeisme">
+    <img height="170" src="https://github-readme-stats.vercel.app/api?username=yeisme&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub统计" />
+  </a>
+
+  <!-- 最常用语言 -->
+  <a href="https://github.com/yeisme">
+    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="常用语言" />
+  </a>
+
+  <!-- GitHub连续提交记录 -->
+  <a href="https://github.com/yeisme">
+    <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=yeisme&theme=tokyonight&hide_border=true" alt="连续提交记录" />
+  </a>
+
+  <!-- GitHub活动图表 -->
+  <a href="https://github.com/yeisme">
+    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=yeisme&theme=tokyo-night&hide_border=true" alt="贡献图表" />
+  </a>
+</div>
 
 ## 🎯 项目展示
 
-<!-- <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats" />
+<a href="https://github.com/yeisme/another-mentor">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=yeisme&repo=another-mentor" />
 </a>
-<a href="https://github.com/anuraghazra/convoychat">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=convoychat" />
-</a> -->
+<a href="https://github.com/yeisme/another-mentor-backend">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=yeisme&repo=another-mentor-backend" />
+</a>
 
 ## 🛠️ 技术栈
 
@@ -75,7 +90,6 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 - API 网关: Traefik, Kong, Nginx
 - 分布式存储: MinIO/S3 对象存储，Ceph/Rook 块存储
 
-
 ### 云原生开发
 
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,grafana,prometheus,githubactions,terraform,ansible" />
@@ -94,7 +108,7 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 <img src="https://skillicons.dev/icons?i=qt,vue"/>
 
 - 桌面开发: Qt,
-- web开发: vue
+- web 开发: vue
 
 ### 工具与辅助技术
 
