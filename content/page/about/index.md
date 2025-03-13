@@ -27,6 +27,10 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 
 ## 📊 个人数据
 
+[![Email](https://img.shields.io/badge/📧-yeieme0123@163.com-2DCE89?style=flat&logo=mail.ru)](mailto:yeieme0123@163.com)
+[![Github](https://img.shields.io/badge/🐙-yeisme-2DCE89?style=flat&logo=github)](https://github.com/yeisme)
+[![Blog](https://img.shields.io/badge/🌐-技术博客-2DCE89?style=flat)](https://yeisme0.xyz)
+
 | _项目_   | _信息_                                            |
 | -------- | ------------------------------------------------- |
 | 年龄     | 21                                                |
@@ -40,34 +44,33 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 ## 🌐 数据展示
 
 <div align="center">
-  <!-- GitHub统计 -->
+  <!-- 动态波浪分隔线 -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header" />
+
+  <!-- GitHub统计卡片（亮色主题） -->
   <a href="https://github.com/yeisme">
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=yeisme&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub统计" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api?username=yeisme&show_icons=true&theme=default&include_all_commits=true&count_private=true&hide_border=true&bg_color=ffffff&title_color=0366d6&icon_color=0366d6&text_color=24292e" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0366d6&text_color=24292e" />
   </a>
 
-  <!-- 最常用语言 -->
+  <!-- 连续提交记录（亮色渐变） -->
   <a href="https://github.com/yeisme">
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="常用语言" />
+    <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=yeisme&theme=default&hide_border=true&background=FFFFFF&stroke=DDDDDD&ring=209CEE&fire=FF7800&currStreakNum=209CEE" />
   </a>
 
-  <!-- GitHub连续提交记录 -->
+  <!-- 自定义活动图表（可交互亮色版） -->
   <a href="https://github.com/yeisme">
-    <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=yeisme&theme=tokyonight&hide_border=true" alt="连续提交记录" />
-  </a>
-
-  <!-- GitHub活动图表 -->
-  <a href="https://github.com/yeisme">
-    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=yeisme&theme=tokyo-night&hide_border=true" alt="贡献图表" />
+    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=yeisme&theme=github-light&hide_border=true&area=true&color=209CEE&line=209CEE&point=FF7800" />
   </a>
 </div>
 
 ## 🎯 项目展示
 
 <a href="https://github.com/yeisme/another-mentor">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=yeisme&repo=another-mentor" />
+  <img height="130" src="https://github-readme-stats.vercel.app/api/pin?username=yeisme&repo=another-mentor&theme=default&show_issues=true&include_all_commits=true"/>
 </a>
 <a href="https://github.com/yeisme/another-mentor-backend">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=yeisme&repo=another-mentor-backend" />
+  <img height="130" src="https://github-readme-stats.vercel.app/api/pin?username=yeisme&repo=another-mentor-backend&theme=default&show_issues=true&include_all_commits=true"/>
 </a>
 
 ## 🛠️ 技术栈
