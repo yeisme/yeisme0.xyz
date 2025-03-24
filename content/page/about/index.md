@@ -23,7 +23,7 @@ menu:
 
 ## 🚀 个人简介
 
-Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，目前就读于广州大学通信工程专业。我对技术的探索永无止境，热爱新知识新技术，喜欢挑战复杂的项目，并通过代码解决实际问题。
+Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，目前就读于广州大学通信工程专业。我对技术的探索永无止境，热爱新知识新技术，喜欢通过代码解决实际问题
 
 ## 📊 个人数据
 
@@ -53,9 +53,9 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
     <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0366d6&text_color=24292e" />
   </a>
 
-  <!-- 连续提交记录（亮色渐变） -->
+  <!-- GitHub提交热力图 -->
   <a href="https://github.com/yeisme">
-    <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=yeisme&theme=default&hide_border=true&background=FFFFFF&stroke=DDDDDD&ring=209CEE&fire=FF7800&currStreakNum=209CEE" />
+    <img width="100%" src="https://ghchart.rshah.org/FF5E62/yeisme" alt="Commit Heatmap" />
   </a>
 
   <!-- 自定义活动图表（可交互亮色版） -->
@@ -71,6 +71,12 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 </a>
 <a href="https://github.com/yeisme/another-mentor-backend">
   <img height="130" src="https://github-readme-stats.vercel.app/api/pin?username=yeisme&repo=another-mentor-backend&theme=default&show_issues=true&include_all_commits=true"/>
+</a>
+<a href="https://github.com/yeisme/another-mentor-frontend">
+  <img height="130" src="https://github-readme-stats.vercel.app/api/pin?username=yeisme&repo=another-mentor-frontend&theme=default&show_issues=true&include_all_commits=true"/>
+</a>
+<a href="https://github.com/yeisme/another-mentor-deploy">
+  <img height="130" src="https://github-readme-stats.vercel.app/api/pin?username=yeisme&repo=another-mentor-deploy&theme=default&show_issues=true&include_all_commits=true"/>
 </a>
 
 ## 🛠️ 技术栈
@@ -91,7 +97,7 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 - API 开发: Gin/Fiber(Go), FastAPI(Python)
 - 消息中间件: NATS(高吞吐场景), dapr
 - API 网关: Traefik, Kong, Nginx
-- 分布式存储: MinIO/S3 对象存储，Ceph/Rook 块存储
+- 分布式存储: MinIO/S3 对象存储, Ceph/Rook 块存储
 
 ### 云原生开发
 
