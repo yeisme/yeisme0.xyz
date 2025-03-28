@@ -65,23 +65,31 @@ target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt-header-only)
 
 ```json
 {
-    "label": "hot-reload:cpp",
-    "type": "shell",
-    "command": "watchexec",
-    "args": [
-        "-r", // 首次运行前执行命令
-        "-e", "cpp,h,hpp", // 监控C++相关文件
-        "-w", "src", // 指定监控目录（按需修改）
-        "--", // 分隔符
-        "cmd", "/C",
-        "cmake -S . -B build -G Ninja && "
-        "cmake --build build --clean-first && "
-        "build/cmake_learn.exe"
-    ],
-    "presentation": {
-        "clear": true,  // 每次运行清屏
-        "group": "hot-reload"
-    }
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "hot-reload:cpp",
+			"type": "shell",
+			"command": "watchexec",
+			"args": [
+				"-r",
+				"-e",
+				"cpp,h,hpp",
+				"cmd",
+				"/C",
+				"cmake -S . -B build -G Ninja && cmake --build build && ./build/mqtt_learn.exe"
+			],
+			"presentation": {
+				"clear": true,
+				"group": "hot-reload"
+			},
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
 }
 ```
 
