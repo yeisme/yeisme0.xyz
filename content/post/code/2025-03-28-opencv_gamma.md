@@ -42,9 +42,9 @@ $$
 ffmpeg -i img.jpg -vf format=gray -pix_fmt gray output_gray.jpg
 ```
 
-![[img 1.jpg]]
+[alt text](2025-03-28-opencv_gamma/img.jpg)
 
-![[Pasted image 20250328173020.png]]
+![alt text](<2025-03-28-opencv_gamma/img 1.jpg>)
 
 ## 萌新版本：v1
 
@@ -76,7 +76,7 @@ gamma_v1(img, img_gamma_0_5, 0.5, 1.0);
 cv::imshow("Gamma 0.5", img_gamma_0_5);
 ```
 
-![[Pasted image 20250328153608.png]]
+![alt text](<2025-03-28-opencv_gamma/Pasted image 20250328153608.png>)
 
 很明显，这个萌新代码漏洞百出
 

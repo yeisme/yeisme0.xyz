@@ -83,27 +83,28 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 
 ### 编程语言
 
-<img src="https://skillicons.dev/icons?i=go,python,cpp,js,bash,java" title="Go, Python, C++, JavaScript, Bash, Java, PowerShell"/>
+<img src="https://skillicons.dev/icons?i=go,python,cpp,js,bash,rust,ts" title="Go, Python, C++, JavaScript, rust, Typescript"/>
 
-- 精通: Go, Python
-- 熟悉: C++, JavaScript
-- 了解: Java, Bash Shell, PowerShell
+- 精通: Go
+- 熟悉: Python, C++
+- 了解: Rust, TypeScript, JavaScript, Bash
 
 ### 后端开发
 
 <img src="https://skillicons.dev/icons?i=nginx,go,postgresql,redis,mysql" />
 
-- 微服务框架: Go-Zero, Kratos
-- API 开发: Gin/Fiber(Go), FastAPI(Python)
-- 消息中间件: NATS(高吞吐场景), dapr
-- API 网关: Traefik, Kong, Nginx
+- 微服务框架: Go-Zero, Kratos, gRPC
+- API 开发: Gin/Fiber(Go), FastAPI(Python), Dapr(跨语言服务调用/状态管理)
+- 网络协议: WebSocket, MQTT(EMQX), SSE
+- 消息中间件: NATS(高吞吐场景), Kafka
+- API 网关: Traefik, Kong, Nginx, Caddy
 - 分布式存储: MinIO/S3 对象存储, Ceph/Rook 块存储
 
 ### 云原生开发
 
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,grafana,prometheus,githubactions,terraform,ansible" />
 
-- 容器编排: Kubernetes, KubeSphere/Rancher 集群部署, Helm
+- 容器编排: Kubernetes, <!-- KubeSphere/ -->Rancher 集群部署, Helm
 - 服务网格: Istio
 - IaC: Terraform, Ansible
 - 监控系统: Prometheus
@@ -111,12 +112,13 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 - 数据可视化: Grafana
 - 日志管理: Loki, Tempo
 - CI/CD: GitHub Actions, Gitea
+- 管理面板: lens, Rancher, k9s
 
 ### 客户端开发
 
 <img src="https://skillicons.dev/icons?i=qt,vue"/>
 
-- 桌面开发: Qt,
+- 桌面开发: Qt
 - web 开发: vue
 
 ### 工具与辅助技术
