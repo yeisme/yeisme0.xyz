@@ -10,10 +10,13 @@ links:
     website: https://space.bilibili.com/1187415869
     image:
 menu:
-    main:
-        weight: -50
-        params:
-            icon: link
+  main:
+    weight: -50
+    params:
+      icon: link
 
 comments: false
 ---
+友情链接（Links）页面用于展示好友网站链接
+
+> 请联系我
