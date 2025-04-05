@@ -2,7 +2,7 @@ baseurl: https://yeisme0.xyz
 languageCode: zh-cn
 theme: hugo-theme-stack
 title: yeisme0-online
-copyright: "none"
+copyright: "© 2024 yeisme0. 除特别注明外，本站内容采用 CC BY-NC-SA 4.0 许可协议。"
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -45,11 +45,11 @@ permalinks:
 
 params:
   beian:
-    icp: "粤ICP备2024350162号-1"
+    icp: "粤ICP备2024350162号"
     gongan:
     # 广东省需额外添加公安备案
-      # number:
-      # url:
+      number: 粤公网安备44011302004837号
+      url: https://beian.mps.gov.cn/#/query/webSearch?code=44011302004837
   mainSections:
     - post
   featuredImageField: image

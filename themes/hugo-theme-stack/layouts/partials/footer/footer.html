@@ -28,9 +28,11 @@
         </a>
 
         <!-- 公安备案 -->
+        <img src="gongan.png" alt="Gongan" class="gongan-icon" />
         {{ with .Site.Params.beian.gongan }}
             <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode={{ .number }}" target="_blank" rel="noopener">
                 粤公网安备{{ .number }}号
+                
             </a>
         {{ end }}
 
@@ -38,3 +40,11 @@
     </section>
 
 </footer>
+
+<style>
+    .gongan-icon {
+        height: 1.5em;
+        margin-right: 2.5px;
+        vertical-align: -0.1em;
+    }
+</style>
