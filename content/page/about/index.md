@@ -50,7 +50,7 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
   <!-- GitHub统计卡片（亮色主题） -->
   <a href="https://github.com/yeisme">
     <img height="170" src="https://github-readme-stats.vercel.app/api?username=yeisme&show_icons=true&theme=default&include_all_commits=true&count_private=true&hide_border=true&bg_color=ffffff&title_color=0366d6&icon_color=0366d6&text_color=24292e" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0366d6&text_color=24292e" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0366d6&text_color=24292e&hide=powershell,html,css,scss" />
   </a>
 
   <!-- GitHub提交热力图 -->
