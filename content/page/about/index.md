@@ -31,15 +31,15 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 [![Github](https://img.shields.io/badge/🐙-yeisme-2DCE89?style=flat&logo=github)](https://github.com/yeisme)
 [![Blog](https://img.shields.io/badge/🌐-技术博客-2DCE89?style=flat)](https://yeisme0.xyz)
 
-| _项目_   | _信息_                                            |
-| -------- | ------------------------------------------------- |
-| 年龄     | 21                                                |
-| 学校     | 广州大学                                          |
-| 专业     | 通信工程                                          |
-| 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com> |
-| Github   | <https://github.com/yeisme>                       |
-| 个人网站 | <https://yeisme0.xyz>                             |
-| 求职意向 | 后端开发, 云原生开发, <br /> 大数据开发, 开源运营 |
+| _项目_   | _信息_                                                                               |
+| -------- | ------------------------------------------------------------------------------------ |
+| 年龄     | 21                                                                                   |
+| 学校     | 广州大学                                                                             |
+| 专业     | 通信工程                                                                             |
+| 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com>                                    |
+| Github   | <https://github.com/yeisme>                                                          |
+| 个人网站 | <https://yeisme0.xyz>                                                                |
+| 求职意向 | 云原生基础,架构开发<br /> Go 服务端开发,DevOps 运维开发<br />全栈开发边,缘云计算开发 |
 
 ## 🌐 数据展示
 
