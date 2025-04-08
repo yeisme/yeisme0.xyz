@@ -1,0 +1,20 @@
+version: "3"
+services:
+  blog:
+    container_name: my-blog
+    image: ghcr.io/yeisme/yeisme0.xyz:latest
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.enable=false"
+    ports:
+      - "80:80"
+
+  watchtower:
+    container_name: watchtower
+    image: containrrr/watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_CLEANUP=true
+    command: --interval 21600
