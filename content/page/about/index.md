@@ -93,10 +93,10 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 
 <img src="https://skillicons.dev/icons?i=nginx,go,postgresql,redis,mysql" />
 
-- 微服务框架: Go-Zero, Kratos, gRPC
-- API 开发: Gin/Fiber(Go), FastAPI(Python), Dapr(跨语言服务调用/状态管理)
-- 网络协议: WebSocket, MQTT(EMQX), SSE
-- 消息中间件: NATS(高吞吐场景), Kafka
+- 微服务框架: Go-Zero, Kratos, gRPC, kitex
+- API 开发: Gin, Fiber, hertz, FastAPI(Python), Dapr
+- 网络协议: WebSocket, MQTT(EMQX), SSE, MCP
+- 消息中间件: NATS, Kafka
 - API 网关: Traefik, Kong, Nginx, Caddy
 - 分布式存储: MinIO/S3 对象存储, Ceph/Rook 块存储
 
@@ -106,12 +106,9 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 
 - 容器编排: Kubernetes, <!-- KubeSphere/ -->Rancher 集群部署, Helm
 - 服务网格: Istio
-- IaC: Terraform, Ansible
-- 监控系统: Prometheus
-- 持续交付: ArgoCD, FluxCD
-- 数据可视化: Grafana
-- 日志管理: Loki, Tempo
-- CI/CD: GitHub Actions, Gitea
+- 基础设施: Terraform, Ansible, harness, meshery 
+- DevOps: ArgoCD, FluxCD, GitHub Actions, Gitea, <!-- kitops -->
+- 监控系统: Grafana, Prometheus, Loki, Tempo, Alloy
 - 管理面板: lens, Rancher, k9s
 
 ### 客户端开发
