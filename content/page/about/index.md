@@ -23,7 +23,7 @@ menu:
 
 ## 🚀 个人简介
 
-Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，目前就读于广州大学通信工程专业。我对技术的探索永无止境，热爱新知识新技术，喜欢通过代码解决实际问题
+云原生基础设施及 Golang 开发，熟练掌握 Kubernetes、IaC、GitOps 等 DevOps 工具和实践。精通 Golang 性能优化及 C++ 编程，熟悉主流框架和 Python 应用开发，致力于实现高效、安全的自动化交付流程。
 
 ## 📊 个人数据
 
@@ -39,7 +39,7 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 | 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com>                                    |
 | Github   | <https://github.com/yeisme>                                                          |
 | 个人网站 | <https://yeisme0.xyz>                                                                |
-| 求职意向 | 云原生基础,架构开发<br /> Go 服务端开发,DevOps 运维开发<br />全栈开发边,缘云计算开发 |
+| 求职意向 | 云原生基础设施开发<br /> Go 服务端开发, DevOps 运维开发<br />全栈开发, 边缘云计算开发 |
 
 ## 🌐 数据展示
 
@@ -50,7 +50,7 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
   <!-- GitHub统计卡片（亮色主题） -->
   <a href="https://github.com/yeisme">
     <img height="170" src="https://github-readme-stats.vercel.app/api?username=yeisme&show_icons=true&theme=default&include_all_commits=true&count_private=true&hide_border=true&bg_color=ffffff&title_color=0366d6&icon_color=0366d6&text_color=24292e" />
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0366d6&text_color=24292e&hide=powershell,html,css,scss" />
+    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs?username=yeisme&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0366d6&text_color=24292e&hide=powershell,html,css,scss,lua" />
   </a>
 
   <!-- GitHub提交热力图 -->
@@ -96,26 +96,26 @@ Hi! 我是 `yeisme` ，一名充满热情的开发者，专注于后端开发，
 - 微服务框架: Go-Zero, Kratos, gRPC, kitex
 - API 开发: Gin, Fiber, hertz, FastAPI(Python), Dapr
 - 网络协议: WebSocket, MQTT(EMQX), SSE, MCP
-- 消息中间件: NATS, Kafka
-- API 网关: Traefik, Kong, Nginx, Caddy
-- 分布式存储: MinIO/S3 对象存储, Ceph/Rook 块存储
+- 消息中间件: NATS
+- API 网关: Traefik, Kong, Nginx
+- 分布式存储: MinIO, juicefs
 
 ### 云原生开发
 
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,grafana,prometheus,githubactions,terraform,ansible" />
 
-- 容器编排: Kubernetes, <!-- KubeSphere/ -->Rancher 集群部署, Helm
 - 服务网格: Istio
-- 基础设施: Terraform, Ansible, harness, meshery 
-- DevOps: ArgoCD, FluxCD, GitHub Actions, Gitea, <!-- kitops -->
+- 基础设施: Terraform, Ansible, , Kubernetes
+- DevOps: ArgoCD, FluxCD, GitHub Actions, Gitea, meshery, harness<!-- kitops -->
 - 监控系统: Grafana, Prometheus, Loki, Tempo, Alloy
-- 管理面板: lens, Rancher, k9s
+- 管理面板: lens, Rancher, k9s, Helm, <!-- KubeSphere/ --> 
+- serverless: knative, openfass, nuclio
 
 ### 客户端开发
 
 <img src="https://skillicons.dev/icons?i=qt,vue"/>
 
-- 桌面开发: Qt
+- 桌面开发: Qt, flutter
 - web 开发: vue
 
 ### 工具与辅助技术
