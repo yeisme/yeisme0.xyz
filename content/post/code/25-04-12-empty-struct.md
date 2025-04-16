@@ -9,13 +9,14 @@ aliases = []
 image = ""
 draft = false
 +++
-# Go语言空结构体(struct{})详解与高性能应用
 
-空结构体(`struct{}`)是Go语言中一个特殊且非常实用的数据类型，它在高性能编程中有着广泛的应用。本文将详细介绍空结构体的特点及其常见使用场景。
+# Go 语言空结构体(struct{})详解与高性能应用
+
+空结构体(`struct{}`)是 Go 语言中一个特殊且非常实用的数据类型，它在高性能编程中有着广泛的应用。本文将详细介绍空结构体的特点及其常见使用场景。
 
 ## 1. 空结构体的内存占用
 
-Go语言中的空结构体是一个不包含任何字段的结构体，定义为`struct{}`。它最显著的特点是**不占用任何内存空间**。
+Go 语言中的空结构体是一个不包含任何字段的结构体，定义为`struct{}`。它最显著的特点是**不占用任何内存空间**。
 
 ```go
 package main
@@ -35,9 +36,9 @@ func main() {
 
 ## 2. 空结构体的内部实现原理
 
-虽然空结构体不占用内存，但Go语言运行时仍然为所有的空结构体实例提供了一个唯一的内存地址。这个地址由运行时维护，所有空结构体实例共享这一个地址。
+虽然空结构体不占用内存，但 Go 语言运行时仍然为所有的空结构体实例提供了一个唯一的内存地址。这个地址由运行时维护，所有空结构体实例共享这一个地址。
 
-在Go的源代码中(`runtime/malloc.go`)有一个特殊的全局变量`zerobase`，它作为所有空结构体实例的内存地址：
+在 Go 的源代码中(`runtime/malloc.go`)有一个特殊的全局变量`zerobase`，它作为所有空结构体实例的内存地址：
 
 ```go
 // runtime/malloc.go (简化版)
@@ -50,9 +51,9 @@ var zerobase uintptr
 
 ### 3.1 实现集合(Set)数据结构
 
-Go语言标准库没有内置Set类型，通常使用`map[T]bool`来模拟集合功能。但使用空结构体作为map的值可以节省内存：
+Go 语言标准库没有内置 Set 类型，通常使用`map[T]bool`来模拟集合功能。但使用空结构体作为 map 的值可以节省内存：
 
-```go 
+```go
 package main
 
 import "fmt"
@@ -81,22 +82,22 @@ func main() {
     s.Add("北京")
     s.Add("上海")
     s.Add("广州")
-    
+
     fmt.Println("集合包含上海:", s.Has("上海"))     // 输出: true
     fmt.Println("集合包含深圳:", s.Has("深圳"))     // 输出: false
-    
+
     s.Delete("上海")
     fmt.Println("删除后集合包含上海:", s.Has("上海")) // 输出: false
 }
 ```
 
-这种实现比使用`map[string]bool`更加节省内存。假设有一百万个元素的集合，使用`bool`类型会额外消耗约1MB的内存，而使用空结构体则完全不需要这部分内存。
+这种实现比使用`map[string]bool`更加节省内存。假设有一百万个元素的集合，使用`bool`类型会额外消耗约 1MB 的内存，而使用空结构体则完全不需要这部分内存。
 
 ### 3.2 信号通知的通道(Channel)
 
 空结构体常用于仅需要通知事件发生而不需要传递数据的通道：
 
-```go 
+```go
 package main
 
 import (
@@ -117,12 +118,12 @@ func worker(done chan struct{}) {
 func main() {
     done := make(chan struct{})
     go worker(done)
-    
+
     // 给worker发送执行信号
     time.Sleep(2 * time.Second) // 等待一段时间
     fmt.Println("主线程发送执行信号")
     done <- struct{}{} // 发送空结构体作为信号
-    
+
     // 等待worker完成
     <-done
     fmt.Println("主线程收到完成信号")
@@ -150,28 +151,28 @@ func main() {
     for i := range tasks {
         tasks[i] = i + 1
     }
-    
+
     // 并发限制为3
     concurrencyLimit := 3
     sem := make(chan struct{}, concurrencyLimit)
-    
+
     var wg sync.WaitGroup
     for _, task := range tasks {
         wg.Add(1)
         taskID := task // 创建局部变量避免闭包问题
-        
+
         sem <- struct{}{} // 获取信号量，达到限制时阻塞
         go func() {
             defer wg.Done()
             defer func() { <-sem }() // 释放信号量
-            
+
             // 模拟任务处理
             fmt.Printf("处理任务 %d 开始\n", taskID)
             time.Sleep(2 * time.Second)
             fmt.Printf("处理任务 %d 完成\n", taskID)
         }()
     }
-    
+
     wg.Wait()
     fmt.Println("所有任务处理完毕")
 }
@@ -248,11 +249,11 @@ func (s singleton) DoSomething() {
 func main() {
     s1 := GetInstance()
     s2 := GetInstance()
-    
+
     // 验证是否为相同实例
     fmt.Printf("s1: %p\n", &s1)
     fmt.Printf("s2: %p\n", &s2)
-    
+
     s1.DoSomething()
 }
 ```
@@ -280,14 +281,14 @@ func checkStatus() struct{} {
 func main() {
     result := doOperation(struct{}{})
     fmt.Println(result)
-    
+
     _ = checkStatus() // 我们对返回值不感兴趣，只关心函数是否执行
 }
 ```
 
 ## 5. 使用空结构体的性能比较
 
-对比空结构体和bool作为map值的内存占用：
+对比空结构体和 bool 作为 map 值的内存占用：
 
 ```go
 package main
@@ -307,27 +308,27 @@ func memStats() uint64 {
 func main() {
     // 创建足够大的数据集以观察内存差异
     const count = 10000000 // 一千万条数据
-    
+
     beforeBool := memStats()
     mapBool := make(map[int]bool, count)
     for i := 0; i < count; i++ {
         mapBool[i] = true
     }
     afterBool := memStats()
-    
+
     runtime.GC() // 触发GC以获得更准确的测量
-    
+
     beforeEmpty := memStats()
     mapEmpty := make(map[int]struct{}, count)
     for i := 0; i < count; i++ {
         mapEmpty[i] = struct{}{}
     }
     afterEmpty := memStats()
-    
+
     fmt.Printf("bool map大小：%d 字节\n", afterBool-beforeBool)
     fmt.Printf("空结构体map大小：%d 字节\n", afterEmpty-beforeEmpty)
     fmt.Printf("每个元素节省：%d 字节\n", unsafe.Sizeof(true))
-    fmt.Printf("总共节省：%.2f MB\n", 
+    fmt.Printf("总共节省：%.2f MB\n",
         float64(unsafe.Sizeof(true)*count)/(1024*1024))
 }
 ```
@@ -337,4 +338,4 @@ func main() {
 1. **合理使用空结构体**：当需要占位符而不需要存储实际数据时，优先考虑使用空结构体。
 2. **语义清晰**：使用空结构体不仅仅是为了优化内存，更重要的是能够表达"这里不需要值"的语义。
 3. **避免过度优化**：对于小型程序或元素数量较少的场景，使用空结构体带来的内存节省可能不明显，此时可以优先考虑代码的可读性。
-4. **用于信号通道**：当使用channel仅作为信号通知而不传递数据时，应始终使用`chan struct{}`而非`chan bool`。
+4. **用于信号通道**：当使用 channel 仅作为信号通知而不传递数据时，应始终使用`chan struct{}`而非`chan bool`。

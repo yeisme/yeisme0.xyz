@@ -9,6 +9,7 @@ aliases = ["DevOps","云原生","Docker"]
 image = ""
 draft = false
 +++
+
 # Docker Watchtower 容器自动更新
 
 在开发和维护基于容器的应用程序时，我们经常需要处理镜像更新的问题。对于个人博客这样的项目，流程通常是：编写内容、推送到 GitHub、通过 GitHub Actions 构建新镜像，然后手动登录服务器执行 docker pull 命令来更新容器。
@@ -25,7 +26,7 @@ draft = false
 
 我真的受够了，我想再不解决这个问题，写 blog 的热情都被磨灭了，为了解决这个问题，找一个自动化容器更新的软件就很有必要了
 
-## 为什么选择 Watchtower？是 GitOps不香吗？
+## 为什么选择 Watchtower？是 GitOps 不香吗？
 
 Watchtower 是一个可以自动更新 Docker 容器的应用程序（轮询）。它监视运行中的容器，并在检测到容器镜像有更新时，自动拉取新镜像并使用相同的参数重新启动容器。
 
@@ -43,7 +44,7 @@ services:
     image: ghcr.io/yeisme/yeisme0.xyz:latest
     restart: unless-stopped
     ports:
-      - "80:80"
+      - '80:80'
 
   watchtower:
     container_name: watchtower
@@ -59,7 +60,7 @@ services:
 
 几点说明：
 
-1. 共有仓库，没有docker认证
+1. 共有仓库，没有 docker 认证
 2. 缺乏一些企业级功能（如高级部署策略和自动回滚），但对于大多数小型项目来说，这些限制并不是问题
 3. 没有通知
 

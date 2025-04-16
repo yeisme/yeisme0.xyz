@@ -9,20 +9,22 @@ aliases = []
 image = ""
 draft = false
 +++
+
 # Jwt Golang 实践
 
-JWT(JSON Web Token)是现代Web应用中常用的身份验证和信息交换技术，本文将结合实际Go代码，深入讲解JWT的工作原理、实现方式以及最佳实践。
+JWT(JSON Web Token)是现代 Web 应用中常用的身份验证和信息交换技术，本文将结合实际 Go 代码，深入讲解 JWT 的工作原理、实现方式以及最佳实践。
 
-## 一、JWT基础概念
+## 一、JWT 基础概念
 
-### 1.1 什么是JWT？
+### 1.1 什么是 JWT？
 
-JWT是一种开放标准(RFC 7519)，用于在网络应用环境间传递声明(claims)的紧凑且自包含的方式。JWT可以使用HMAC算法或RSA/ECDSA等公钥/私钥对进行签名，确保传输内容不被篡改。
+JWT 是一种开放标准(RFC 7519)，用于在网络应用环境间传递声明(claims)的紧凑且自包含的方式。JWT 可以使用 HMAC 算法或 RSA/ECDSA 等公钥/私钥对进行签名，确保传输内容不被篡改。
 
-### 1.2 JWT的结构
+### 1.2 JWT 的结构
 
-JWT由三部分组成，以点(`.`)分隔：
-- **Header**: 描述JWT的元数据，如类型和使用的签名算法
+JWT 由三部分组成，以点(`.`)分隔：
+
+- **Header**: 描述 JWT 的元数据，如类型和使用的签名算法
 - **Payload**: 包含声明(claims)，即实体(用户)和其他数据的声明
 - **Signature**: 用于验证消息在传输过程中没有被篡改
 
@@ -31,14 +33,14 @@ xxxxx.yyyyy.zzzzz
 Header.Payload.Signature
 ```
 
-## 二、JWT工作原理深度解析
+## 二、JWT 工作原理深度解析
 
-从代码实现角度看，JWT的工作原理可以分为以下几个环节：
+从代码实现角度看，JWT 的工作原理可以分为以下几个环节：
 
-### 2.1 创建JWT
+### 2.1 创建 JWT
 
 > 参考我的 jwt.go 实现，具体代码在 ``，经过测试可以正常工作
-> 使用了 `github.com/golang-jwt/jwt/v5` 库
+使用了 `github.com/golang-jwt/jwt/v5` 库
 
 我们看`jwt.go`中的`CreateToken`方法实现：
 
@@ -61,15 +63,16 @@ func (j *JWT) CreateToken(claims JWTClaims) (string, int64, error) {
 }
 ```
 
-该方法展示了JWT创建的核心步骤：
+该方法展示了 JWT 创建的核心步骤：
+
 1. 设置有效期(`ExpiresAt`)、发布时间(`IssuedAt`)和发行人(`Issuer`)
 2. 设置令牌生效时间(`NotBefore`)，增强安全性
-3. 使用指定签名算法创建token
-4. 使用密钥对token进行签名
+3. 使用指定签名算法创建 token
+4. 使用密钥对 token 进行签名
 
-### 2.2 解析与验证JWT
+### 2.2 解析与验证 JWT
 
-JWT解析和验证是确保安全的关键步骤：
+JWT 解析和验证是确保安全的关键步骤：
 
 ```go
 func (j *JWT) ParseToken(tokenString string) (*JWTClaims, error) {
@@ -90,13 +93,14 @@ func (j *JWT) ParseToken(tokenString string) (*JWTClaims, error) {
 }
 ```
 
-这段代码展示了JWT验证的几个关键点：
+这段代码展示了 JWT 验证的几个关键点：
+
 1. 验证签名方法是否匹配
 2. 使用密钥验证签名
-3. 检查token是否有效(包括过期时间等)
+3. 检查 token 是否有效(包括过期时间等)
 4. 将验证结果转换为自定义声明结构
 
-### 2.3 JWT的错误处理机制
+### 2.3 JWT 的错误处理机制
 
 错误处理对于安全认证至关重要：
 
@@ -115,13 +119,14 @@ if err != nil {
 }
 ```
 
-这部分展示了对各种JWT错误类型的精确处理：
-- 格式错误的token
-- 已过期的token
-- 尚未生效的token
-- 其他无效token情况
+这部分展示了对各种 JWT 错误类型的精确处理：
 
-jwt/v5其实有完整的错误代码，在 `error.go` 中，如果你熟悉 jwt 机制，完全不需要自定义
+- 格式错误的 token
+- 已过期的 token
+- 尚未生效的 token
+- 其他无效 token 情况
+
+jwt/v5 其实有完整的错误代码，在 `error.go` 中，如果你熟悉 jwt 机制，完全不需要自定义
 
 ```go
 
@@ -145,11 +150,11 @@ var (
 )
 ```
 
-## 三、JWT高级特性实现
+## 三、JWT 高级特性实现
 
-### 3.1 Token刷新机制
+### 3.1 Token 刷新机制
 
-Token刷新是JWT管理的重要部分，尤其是处理过期token时：
+Token 刷新是 JWT 管理的重要部分，尤其是处理过期 token 时：
 
 ```go
 func (j *JWT) RefreshToken(tokenString string) (string, int64, error) {
@@ -178,13 +183,14 @@ func (j *JWT) ValidateTokenWithoutExpiration(tokenString string) (*JWTClaims, er
 ```
 
 刷新机制的核心思想是：
-1. 验证旧token的签名，但忽略过期时间
-2. 保留原始claims中的用户数据
-3. 创建新token，更新过期时间
+
+1. 验证旧 token 的签名，但忽略过期时间
+2. 保留原始 claims 中的用户数据
+3. 创建新 token，更新过期时间
 
 ### 3.2 配置链式调用设计
 
-代码采用了流式API设计，支持链式调用：
+代码采用了流式 API 设计，支持链式调用：
 
 ```go
 // 链式调用示例
@@ -193,7 +199,7 @@ jwt := NewJWT("your-secret-key").
     WithIssuer("api.example.com")
 ```
 
-这种设计让JWT配置更加灵活，测试代码中也有相应展示：
+这种设计让 JWT 配置更加灵活，测试代码中也有相应展示：
 
 ```go
 // 测试组合配置选项
@@ -209,11 +215,11 @@ func TestCombinedOptions(t *testing.T) {
 }
 ```
 
-## 四、JWT安全性深度剖析
+## 四、JWT 安全性深度剖析
 
-通过`jwt_test.go`中的测试用例，我们可以深入理解JWT的安全性考虑：
+通过`jwt_test.go`中的测试用例，我们可以深入理解 JWT 的安全性考虑：
 
-### 4.1 无效Token处理
+### 4.1 无效 Token 处理
 
 ```go
 func TestInvalidToken(t *testing.T) {
@@ -244,12 +250,13 @@ func TestInvalidToken(t *testing.T) {
 }
 ```
 
-测试用例验证了系统能正确处理三种无效token情况：
-1. 格式错误的token
-2. 被篡改的token
-3. 使用错误密钥签名的token
+测试用例验证了系统能正确处理三种无效 token 情况：
 
-### 4.2 过期Token处理
+1. 格式错误的 token
+2. 被篡改的 token
+3. 使用错误密钥签名的 token
+
+### 4.2 过期 Token 处理
 
 ```go
 func TestExpiredToken(t *testing.T) {
@@ -274,13 +281,14 @@ func TestExpiredToken(t *testing.T) {
 }
 ```
 
-这个测试模拟了token过期场景，确保系统能正确识别和处理过期token。
+这个测试模拟了 token 过期场景，确保系统能正确识别和处理过期 token。
 
-## 五、JWT在实际项目中的应用
+## 五、JWT 在实际项目中的应用
 
-从提供的代码可以看出，JWT在实际项目中的典型应用流程：
+从提供的代码可以看出，JWT 在实际项目中的典型应用流程：
 
-- **用户登录时创建JWT**：
+- **用户登录时创建 JWT**：
+
 ```go
 // 创建JWT实例
 jwt := utils.NewJWT(l.svcCtx.Config.Auth.AccessSecret)
@@ -299,32 +307,36 @@ claims := utils.JWTClaims{
 token, expiresAt, err := jwt.CreateToken(claims)
 ```
 
-- **API访问时验证JWT**：
-   在中间件中验证token并提取用户信息
-- **刷新过期或即将过期的JWT**：
-   使用RefreshToken机制延长用户会话
+- **API 访问时验证 JWT**：
+  在中间件中验证 token 并提取用户信息
+- **刷新过期或即将过期的 JWT**：
+  使用 RefreshToken 机制延长用户会话
 
-## 六、JWT最佳实践
+## 六、JWT 最佳实践
 
-基于代码分析，我们可以总结以下JWT最佳实践：
+基于代码分析，我们可以总结以下 JWT 最佳实践：
 
 **使用合适的过期时间**：根据安全需求设置合理的过期时间
+
 ```go
 jwt.WithExpireDuration(time.Hour * 24) // 24小时有效期
 ```
 
-**实现刷新机制**：允许无缝刷新过期token
+**实现刷新机制**：允许无缝刷新过期 token
+
 ```go
 newToken, _, err := jwt.RefreshToken(oldToken)
 ```
 
 **密钥保护**：使用环境变量或安全服务存储签名密钥
+
 ```go
 // 从配置中读取密钥，而非硬编码
 jwt := utils.NewJWT(l.svcCtx.Config.Auth.AccessSecret)
 ```
 
 **使用多种声明**：包含足够信息用于权限验证，但避免敏感信息
+
 ```go
 claims := utils.JWTClaims{
     UserID:   user.ID,

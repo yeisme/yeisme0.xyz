@@ -75,7 +75,7 @@ draft = false
 
 在各种基准测试中，Go Zero 的性能与其他流行的 Go Web 框架相比通常具有竞争力 。然而，在原始 HTTP 请求处理速度方面，Gin 等框架在综合基准测试中通常表现更好 。Echo 和 Fiber 也因其强大的性能而闻名，有时在特定的基准测试场景中会超越 Go Zero 。基于 fasthttp 的框架在这些比较中往往表现出最高的原始性能。
 
-我去年 9 月了解 go-zero(在 CNCF的全景图中) ，今年 3 月才在熟悉 k8s 的基础上，开始我的第一个 go-zero 项目。
+我去年 9 月了解 go-zero(在 CNCF 的全景图中) ，今年 3 月才在熟悉 k8s 的基础上，开始我的第一个 go-zero 项目。
 
 不过，说了这么多缺点，我却仍然推荐你用 go-zero。
 
@@ -90,7 +90,7 @@ type (
         Username string `json:"username"`
         Password string `json:"password"`
     }
-    
+
     RegisterResp {
         Id int64 `json:"id"`
     }
@@ -102,8 +102,8 @@ service user-api {
 }
 ```
 
-并使用 `goctl api doc --dir . --o ./doc` 等命令生成 openapi 文件，使用其他 goctl 命令生成docker、k8s 以及其他语言的客户端调用代码(如果你知道 gRPC，你肯定知道我在说什么)
+并使用 `goctl api doc --dir . --o ./doc` 等命令生成 openapi 文件，使用其他 goctl 命令生成 docker、k8s 以及其他语言的客户端调用代码(如果你知道 gRPC，你肯定知道我在说什么)
 
-如果回到去年，我绝对先学 go-zero，少走一年弯路，使用 gin 的时候，你可能需要学 viper进行环境配置加载，gorm用于数据库操作，手动添加 Prometheus、jaeger、pprof的配置，现在只用在 yaml 文件里随便配置一下就能使用。
+如果回到去年，我绝对先学 go-zero，少走一年弯路，使用 gin 的时候，你可能需要学 viper 进行环境配置加载，gorm 用于数据库操作，手动添加 Prometheus、jaeger、pprof 的配置，现在只用在 yaml 文件里随便配置一下就能使用。
 
-当然先从简单的 Gin 开始，随着项目复杂度增加再考虑迁移到 go-zero 等更全面的框架也很合理，但是__我还是推荐你先用 go-zero__，因为 golang 目前最重要的生态就是云原生，如果你不打算做云原生开发，那你选 go 就没有什么优势了。
+当然先从简单的 Gin 开始，随着项目复杂度增加再考虑迁移到 go-zero 等更全面的框架也很合理，但是**我还是推荐你先用 go-zero**，因为 golang 目前最重要的生态就是云原生，如果你不打算做云原生开发，那你选 go 就没有什么优势了。
