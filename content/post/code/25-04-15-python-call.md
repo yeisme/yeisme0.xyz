@@ -3,9 +3,9 @@ title = "Python 使用 `__call__` 实现装饰器"
 date = "2025-04-15T01:22:01+08:00"
 description = ""
 tags = []
-categories = []
+categories = ["Python"]
 series = []
-aliases = ["Python"]
+aliases = []
 image = ""
 draft = false
 +++

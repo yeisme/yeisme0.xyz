@@ -31,14 +31,14 @@ menu:
 [![Github](https://img.shields.io/badge/🐙-yeisme-2DCE89?style=flat&logo=github)](https://github.com/yeisme)
 [![Blog](https://img.shields.io/badge/🌐-技术博客-2DCE89?style=flat)](https://yeisme0.xyz)
 
-| _项目_   | _信息_                                                                               |
-| -------- | ------------------------------------------------------------------------------------ |
-| 年龄     | 21                                                                                   |
-| 学校     | 广州大学                                                                             |
-| 专业     | 通信工程                                                                             |
-| 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com>                                    |
-| Github   | <https://github.com/yeisme>                                                          |
-| 个人网站 | <https://yeisme0.xyz>                                                                |
+| _项目_   | _信息_                                                                                |
+| -------- | ------------------------------------------------------------------------------------- |
+| 年龄     | 21                                                                                    |
+| 学校     | 广州大学                                                                              |
+| 专业     | 通信工程                                                                              |
+| 邮箱     | <yeieme0123@163.com> <br /> <yefun2004@gmail.com>                                     |
+| Github   | <https://github.com/yeisme>                                                           |
+| 个人网站 | <https://yeisme0.xyz>                                                                 |
 | 求职意向 | 云原生基础设施开发<br /> Go 服务端开发, DevOps 运维开发<br />全栈开发, 边缘云计算开发 |
 
 ## 🌐 数据展示
@@ -64,6 +64,32 @@ menu:
   </a>
 </div>
 
+## 💪 专业能力
+
+### Golang 开发与性能优化
+
+- 深入理解 Golang 运行时机制，擅长内存优化与 GC 调优
+- 精通逃逸分析、pprof 调优、火焰图分析等高级性能分析技术
+- 熟练运用 sync.Pool 对象复用、内存预分配等减少 GC 压力的技术
+- 能够通过 CGO/FFI 编写 C/C++ 扩展，优化关键计算路径
+- 熟悉 FUSE 文件系统开发与 io_uring 高性能异步 I/O 编程
+
+### 云原生与分布式系统
+
+- 拥有实际 Kubernetes 集群管理经验，熟悉微服务架构与服务网格
+- 精通使用 Istio 进行服务网格治理、流量控制与安全管理
+- 构建过完整的可观测性体系，包括指标监控、分布式追踪和性能分析
+- 熟练使用 Prometheus、Grafana、Tempo、Pyroscope 等监控工具链
+- 对分布式存储系统（MinIO、JuiceFS）有深入了解和实践经验
+
+### DevOps 与自动化
+
+- 熟练使用 Terraform 和 Ansible 实现基础设施即代码(IaC)
+- 能够设计和实现完整的 GitOps 工作流与 CI/CD 流水线
+- 实践过将 Harness、ArgoCD、Gitea 等工具整合的全自动化部署
+- 通过集成 Trivy 等工具进行容器镜像和依赖安全扫描
+- 具备自动化测试、灰度发布与回滚策略实施能力
+
 ## 🎯 项目展示
 
 <a href="https://github.com/yeisme/another-mentor">
@@ -83,50 +109,67 @@ menu:
 
 ### 编程语言
 
-<img src="https://skillicons.dev/icons?i=go,python,cpp,js,bash,rust,ts" title="Go, Python, C++, JavaScript, rust, Typescript"/>
+<img src="https://skillicons.dev/icons?i=go,python,cpp,js,rust,ts" title="Go, Python, C++, JavaScript, rust, Typescript"/>
 
-- 精通: Go
-- 熟悉: Python, C++
-- 了解: Rust, TypeScript, JavaScript, Bash
+- **精通**: Go (运行时机制、并发模型、性能优化)
+- **熟悉**: Python (Web 开发、ASGI 服务器), C++ (系统编程、CGO 扩展)
+- **了解**: Rust, TypeScript, JavaScript
 
 ### 后端开发
 
-<img src="https://skillicons.dev/icons?i=nginx,go,postgresql,redis,mysql" />
+<img src="https://skillicons.dev/icons?i=nginx,postgresql,redis,mysql" />
 
-- 微服务框架: Go-Zero, Kratos, gRPC, kitex
-- API 开发: Gin, Fiber, hertz, FastAPI(Python), Dapr
-- 网络协议: WebSocket, MQTT(EMQX), SSE, MCP
-- 消息中间件: NATS
-- API 网关: Traefik, Kong, Nginx
-- 分布式存储: MinIO, juicefs
+- **微服务框架**: Go-Zero, Kratos, gRPC, kitex, Gofr, goframe
+- **API 开发**: Gin, Fiber, hertz, Python(litestar, FastAPI), Dapr
+- **ORM & 数据存储**: GORM, Ent, Badger, Pebble, RocksDB, PostgreSQL, CockroachDB
+- **对象存储**: MinIO, JuiceFS, 分布式文件系统
+- **网络协议**: WebSocket, MQTT(EMQX), SSE, MCP
+- **消息队列**: NATS, Kafka
+- **API 网关**: Traefik, Kong, Nginx
+- **AI 集成**: 基于 MCP 的 AI Agent 开发
 
 ### 云原生开发
 
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,grafana,prometheus,githubactions,terraform,ansible" />
 
-- 服务网格: Istio
-- 基础设施: Terraform, Ansible, , Kubernetes
-- DevOps: ArgoCD, FluxCD, GitHub Actions, Gitea, meshery, harness<!-- kitops -->
-- 监控系统: Grafana, Prometheus, Loki, Tempo, Alloy
-- 管理面板: lens, Rancher, k9s, Helm, <!-- KubeSphere/ --> 
-- serverless: knative, openfass, nuclio
+- **容器编排**: Kubernetes, 应用部署与集群管理
+- **服务网格**: Istio, 服务治理与流量管理
+- **网络**: Cilium, 基于 eBPF 的网络策略
+- **容器技术**: Docker, Podman, Buildah, 容器优化
+- **容器构建**: pack, kaniko, skaffold, slim
+- **基础设施**: Terraform, Ansible, kubeedge, Harbor
+- **DevOps & GitOps**: ArgoCD, FluxCD, GitHub Actions, Gitea, meshery, harness
+- **可观测性**: Grafana, Prometheus, Loki, Tempo, Pyroscope, Alloy
+- **管理工具**: Lens, Rancher, k9s, Helm
+- **Serverless**: knative, openfaas, nuclio
 
 ### 客户端开发
 
-<img src="https://skillicons.dev/icons?i=qt,vue"/>
+<img src="https://skillicons.dev/icons?i=qt,flutter,vue"/>
 
-- 桌面开发: Qt, flutter
-- web 开发: vue
+- **桌面开发**: Qt, flutter
+- **Web 开发**: Vue
 
 ### 工具与辅助技术
 
 <img src="https://skillicons.dev/icons?i=cmake,postman,git"/>
 
-- 项目管理: Git
-- 构建工具: Makefile, CMake
-- 测试工具: Postman
-- 调试工具: pprof, gdb, delve
-- 安全扫描: Trivy(镜像漏洞)
+- **项目管理**: Git, GitHub, GitLab
+- **构建工具**: Makefile, CMake, Bazel
+- **测试工具**: Postman, K6, 自动化测试
+- **调试分析**: pprof, gdb, delve, 火焰图, eBPF
+- **安全扫描**: Trivy (容器安全), 依赖漏洞分析
+- **前沿技术**: WebAssembly, Rust, 边缘计算
+
+## 📚 持续学习
+
+我始终保持对新兴技术的关注，当前专注于：
+
+- 高性能分布式系统设计与最佳实践
+- 基于 WebAssembly 的云原生应用开发
+- Rust 在系统编程中的应用
+- eBPF 技术在可观测性和网络领域的实践
+- AI Agent 的架构与工程化实践
 
 > [!TIP]
-> 如果你有任何问题或者合作意向，请随时联系我
+> 如果您对云原生技术、高性能系统设计或自动化部署实践有任何问题或合作意向，请随时联系我！
