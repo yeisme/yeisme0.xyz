@@ -6,7 +6,7 @@ tags = []
 categories = ["Zig","Cgo","C","Go"]
 series = []
 aliases = []
-image = "jimeng-2025-05-16-557-生成一张图片期刊的风格，一个卡通化的 Go Gopher 和一个 C 代码图标在蓝色和白色的 Zig 编译器的两侧。编译器顶部中央印着一个程式化的蓝色 Zi.jpg"
+image = "title.jpg"
 draft = false
 +++
 
