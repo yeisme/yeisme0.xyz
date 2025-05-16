@@ -26,7 +26,6 @@ git push origin main --follow-tags
 echo "创建 GitHub Release..."
 gh release create "v${VERSION}" \
     --title "v${VERSION}" \
-    --notes "Release v${VERSION}" \
-    --published
+    --notes "Release v${VERSION}"
 
 echo "✅ 版本 $VERSION 已成功发布！"
