@@ -2,8 +2,8 @@
 title = "Jwt-Golang 实践"
 date = "2025-03-10T17:14:56+08:00"
 description = ""
-tags = []
-categories = ["编程","golang","鉴权"]
+tags = ["golang","鉴权"]
+categories = ["编程",]
 series = []
 aliases = []
 image = ""

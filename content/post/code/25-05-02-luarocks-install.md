@@ -2,8 +2,8 @@
 title = "Luarocks: lua 包管理器使用"
 date = "2025-05-02T17:34:46+08:00"
 description = ""
-tags = []
-categories = ["lua"]
+tags = ["lua"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

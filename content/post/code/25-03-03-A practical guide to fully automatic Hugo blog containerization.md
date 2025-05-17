@@ -2,8 +2,8 @@
 title = "全自动 Hugo 博客容器化实践指南"
 date = "2025-03-03T18:13:08+08:00"
 description = ""
-tags = []
-categories = ["编程","DevOps","云原生"]
+tags = ["Shell","DevOps","云原生"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

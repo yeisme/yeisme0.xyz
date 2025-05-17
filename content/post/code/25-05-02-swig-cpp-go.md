@@ -2,8 +2,8 @@
 title = "Swig Cpp Go"
 date = "2025-05-02T17:48:17+08:00"
 description = ""
-tags = []
-categories = ["C++","Go"]
+tags = ["C++","Go"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

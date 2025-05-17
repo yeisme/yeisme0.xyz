@@ -2,7 +2,7 @@ baseurl: https://yeisme0.xyz
 languageCode: zh-cn
 theme: hugo-theme-stack
 title: yeisme0-online
-copyright: "© 2024 yeisme0. 除特别注明外，本站内容采用 CC BY-NC-SA 4.0 许可协议。"
+copyright: "yeisme0. 除特别注明外，本站内容采用 CC BY-NC-SA 4.0 许可协议。"
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -10,7 +10,7 @@ DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage: false
+hasCJKLanguage: true
 
 languages:
   # en:
@@ -37,7 +37,7 @@ services:
     id:
 
 pagination:
-  pagerSize: 3
+  pagerSize: 100
 
 permalinks:
   post: /p/:slug/
@@ -47,7 +47,7 @@ params:
   beian:
     icp: "粤ICP备2024350162号"
     gongan:
-    # 广东省需额外添加公安备案
+      # 广东省需额外添加公安备案
       number: 粤公网安备44011302004837号
       url: https://beian.mps.gov.cn/#/query/webSearch?code=44011302004837
   mainSections:
@@ -74,7 +74,7 @@ params:
       src: other/avatar.jpg
 
   article:
-    math: false
+    math: true
     toc: true
     readingTime: true
     license:
@@ -170,13 +170,13 @@ params:
       - type: search
       - type: archives
         params:
-          limit: 5
+          limit: 20
       - type: categories
         params:
-          limit: 10
+          limit: 20
       - type: tag-cloud
         params:
-          limit: 10
+          limit: 50
     page:
       - type: toc
 
@@ -252,18 +252,6 @@ markup:
       attribute:
         block: true
 
-    extensions:
-      passthrough:
-        enable: true
-        delimiters:
-          block:
-            - - \[
-              - \]
-            - - $$
-              - $$
-          inline:
-            - - \(
-              - \)
     renderer:
       ## Set to true if you have HTML content inside Markdown
       unsafe: true

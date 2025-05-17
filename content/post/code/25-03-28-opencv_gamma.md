@@ -2,8 +2,8 @@
 title = "伽马变换：图像处理函数从理论到工程"
 date = "2025-03-28T18:09:07+08:00"
 description = ""
-tags = []
-categories = ["OpenCV","C++","代码优化"]
+tags = ["OpenCV","C++","代码优化"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

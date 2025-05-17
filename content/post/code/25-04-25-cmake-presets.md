@@ -2,8 +2,8 @@
 title = "Cmake 预设"
 date = "2025-04-25T15:26:16+08:00"
 description = ""
-tags = []
-categories = ["C++","CMake","编程"]
+tags = ["C++","CMake"]
+categories = ["编程"]
 series = []
 aliases = ["CMake Presets"]
 image = ""

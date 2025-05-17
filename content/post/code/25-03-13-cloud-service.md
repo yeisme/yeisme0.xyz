@@ -2,8 +2,8 @@
 title = "如何选择你的云服务"
 date = "2025-03-13T00:11:08+08:00"
 description = ""
-tags = []
-categories = ["云原生","编程","微服务"]
+tags = ["云原生","微服务"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

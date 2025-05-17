@@ -2,8 +2,8 @@
 title = "2025 05 16 CGO 交叉编译"
 date = "2025-05-16T20:04:36+08:00"
 description = ""
-tags = []
-categories = ["Zig","Cgo","C","Go"]
+tags = ["Zig","Cgo","C","Go"]
+categories = ["编程"]
 series = []
 aliases = []
 image = "title.jpg"

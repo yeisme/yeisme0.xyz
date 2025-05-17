@@ -2,10 +2,10 @@
 title = "Docker Watchtower 容器自动更新"
 date = "2025-04-08T16:39:36+08:00"
 description = ""
-tags = []
-categories = []
+tags = ["DevOps","云原生","Docker"]
+categories = ["编程"]
 series = []
-aliases = ["DevOps","云原生","Docker"]
+aliases = []
 image = ""
 draft = false
 +++

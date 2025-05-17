@@ -2,8 +2,8 @@
 title = "Go Pkg Fmt 学习笔记"
 date = "2025-04-05T14:05:10+08:00"
 description = ""
-tags = []
-categories = ["Go"]
+tags = ["Go"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

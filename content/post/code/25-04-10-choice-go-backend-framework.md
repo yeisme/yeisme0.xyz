@@ -2,8 +2,8 @@
 title = "如何选择你的 Golang 后端开发框架"
 date = "2025-04-10T17:22:33+08:00"
 description = ""
-tags = []
-categories = ["golang","backend"]
+tags = ["golang","backend"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

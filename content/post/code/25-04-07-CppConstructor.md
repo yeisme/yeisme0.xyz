@@ -2,8 +2,8 @@
 title = "C++中的构造函数（不）全面解析"
 date = "2025-04-07T16:54:16+08:00"
 description = ""
-tags = []
-categories = ["C++"]
+tags = ["C++"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

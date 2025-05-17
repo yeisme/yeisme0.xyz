@@ -2,8 +2,8 @@
 title = "打造高效的 PowerShell 开发环境"
 date = "2025-03-01T15:55:14+08:00"
 description = ""
-tags = []
-categories = ["编程","shell","配置"]
+tags = ["shell"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""

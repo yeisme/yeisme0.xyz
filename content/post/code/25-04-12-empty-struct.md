@@ -2,8 +2,8 @@
 title = "Empty Struct"
 date = "2025-04-12T18:01:04+08:00"
 description = ""
-tags = []
-categories = ["golang"]
+tags = ["golang"]
+categories = ["编程"]
 series = []
 aliases = []
 image = ""
