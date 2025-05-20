@@ -69,7 +69,7 @@ menu:
 
 ### Golang 开发与性能优化
 
-- 深入理解 Golang 运行时机制，擅长并发模型与内存管理，熟练运用 sync.Pool 进行对象复用
+- 深入理解 Golang 运行时机制，擅长并发模型与内存管理，熟练运用 sync 库进行并发编程
 - 精通逃逸分析、pprof 调优、火焰图等多种性能分析与优化手段
 - 能够通过 CGO/FFI 编写高性能 C/C++ 扩展，提升系统底层能力
 - 熟练应用 highway、AVX2 等 SIMD 库优化关键计算路径，实现数据并行加速
@@ -85,7 +85,7 @@ menu:
 
 ### DevOps 与自动化
 
-- 熟练使用 Terraform 和 Ansible 实现基础设施即代码(IaC)
+- 熟练使用 Terraform 实现 IaC
 - 能够设计和实现完整的 GitOps 工作流与 CI/CD 流水线
 - 实践过将 Harness, ArgoCD, Gitea 等工具整合的全自动化部署
 - 通过集成 Trivy 等工具进行容器镜像和依赖安全扫描
@@ -118,13 +118,12 @@ menu:
 - **微服务框架**: Go-Zero, Kratos, gRPC, kitex, Gofr
 - **API 开发**: Gin, Fiber, hertz, litestar(Python), Dapr, elysia(TS)
 - **ORM**: GORM, Ent
-- **关系型数据库**: PostgreSQL, DuckDB
+- **关系型数据库**: PostgreSQL, DuckDB, SQLite
 - **键值数据库**: Redis, Badger, RocksDB
 - **对象存储**: MinIO, JuiceFS
 - **网络协议**: WebSocket, MQTT, SSE, MCP
 - **消息队列**: NATS, Kafka
 - **API 网关**: Traefik, Kong, Nginx
-- **AI 集成**: 基于 MCP 的 AI Agent 开发
 
 ### 高性能开发
 
@@ -132,7 +131,7 @@ menu:
 - **并行计算**: OpenMP
 - **I/O**: io_uring, epoll
 - **文件系统开发**: FUSE
-- **内存优化**: 内存池, 对象复用, 零拷贝
+- **内存优化**: Memory Pool, Object Reuse, zero-copy
 
 ### 云原生开发
 
@@ -143,13 +142,12 @@ menu:
 - **容器编排**: Kubernetes, KubeEdge, Docker Compose
 - **服务网格**: Istio
 - **网络**: Cilium
-- **容器技术**: Docker, Podman
-- **容器构建**: kaniko, slim, buildx
+- **容器运行时**: Docker, Podman
+- **容器构建**: slim, buildx, ko-build
 - **基础设施**: Terraform, Ansible, KubeEdge, Harbor
-- **DevOps & GitOps**: ArgoCD, FluxCD, GitHub Actions, Gitea, meshery, harness
+- **DevOps & GitOps**: ArgoCD, GitHub Actions, Gitea
 - **可观测性**: Grafana, Prometheus, Loki, Tempo, Pyroscope, Alloy
 - **管理工具**: Lens, Rancher, k9s, Helm
-- **Serverless**: knative, openfaas
 
 ### 客户端开发
 
@@ -157,7 +155,7 @@ menu:
 <img src="https://skillicons.dev/icons?i=qt,flutter,vue"/>
 </p>
 
-- **桌面开发**: Qt, flutter
+- **桌面开发**: Qt
 - **Web 开发**: Vue
 
 ### 工具与辅助技术
@@ -184,3 +182,7 @@ menu:
 
 > [!TIP]
 > 如果您对云原生技术, 高性能系统设计或自动化部署实践有任何问题或合作意向, 请随时联系我！
+
+## 学习目标
+
+- [ ]
