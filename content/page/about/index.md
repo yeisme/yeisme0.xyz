@@ -122,8 +122,8 @@ menu:
 - **键值数据库**: Redis, Badger, RocksDB
 - **对象存储**: MinIO, JuiceFS
 - **网络协议**: WebSocket, MQTT, SSE, MCP
-- **消息队列**: NATS, Kafka
-- **API 网关**: Traefik, Kong, Nginx
+- **消息队列**: NATS,
+- **API 网关**: Traefik, Kong, Tyk
 
 ### 高性能开发
 
@@ -152,7 +152,7 @@ menu:
 ### 客户端开发
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=qt,flutter,vue"/>
+<img src="https://skillicons.dev/icons?i=qt,vue"/>
 </p>
 
 - **桌面开发**: Qt
@@ -165,7 +165,7 @@ menu:
 </p>
 
 - **版本管理**: Git
-- **构建工具**: Makefile, CMake
+- **构建工具**: Makefile, CMake, Just, Task, Ninja
 - **测试工具**: Postman, K6
 - **调试分析**: pprof, gdb, delve, goref, go-size-analyzer
 - **安全扫描**: Trivy
