@@ -82,7 +82,7 @@ params:
       default: Licensed under CC BY-NC-SA 4.0
 
   comments:
-    enabled: true
+    enabled: false
     provider: disqus
 
     disqusjs:
@@ -212,6 +212,7 @@ params:
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
   main: []
+
 
   social:
     - identifier: github

@@ -17,6 +17,32 @@
                     "HUGO_ENV": "development"
                 }
             }
+        },
+        {
+            "label": "release",
+            "type": "shell",
+            "command": "sh",
+            "args": [
+                "./release.sh",
+                "${input:releaseDate}"
+            ],
+            "group": {
+                "kind": "build"
+            },
+            "problemMatcher": [],
+            "options": {
+                "env": {
+                    "HUGO_ENV": "production"
+                }
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "releaseDate",
+            "description": "Release date (e.g., 25.5.24)",
+            "default": "",
+            "type": "promptString"
         }
     ]
 }
