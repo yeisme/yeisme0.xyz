@@ -122,7 +122,7 @@ menu:
 - **键值数据库**: Redis, Badger, RocksDB
 - **对象存储**: MinIO, JuiceFS
 - **网络协议**: WebSocket, MQTT, SSE, MCP
-- **消息队列**: NATS,
+- **消息队列**: NATS
 - **API 网关**: Traefik, Kong, Tyk
 
 ### 高性能开发
@@ -139,13 +139,11 @@ menu:
 <img src="https://skillicons.dev/icons?i=docker,kubernetes,grafana,prometheus,githubactions,terraform,ansible"/>
 </p>
 
-- **容器编排**: Kubernetes, KubeEdge, Docker Compose
-- **服务网格**: Istio
+- **容器编排**: Kubernetes, Docker Compose
 - **网络**: Cilium
 - **容器运行时**: Docker, Podman
 - **容器构建**: slim, buildx, ko-build
-- **基础设施**: Terraform, Ansible, KubeEdge, Harbor
-- **DevOps & GitOps**: ArgoCD, GitHub Actions, Gitea
+- **DevOps & GitOps**: ArgoCD, GitHub Actions
 - **可观测性**: Grafana, Prometheus, Loki, Tempo, Pyroscope, Alloy
 - **管理工具**: Lens, Rancher, k9s, Helm
 
@@ -165,7 +163,7 @@ menu:
 </p>
 
 - **版本管理**: Git
-- **构建工具**: Makefile, CMake, Just, Task, Ninja
+- **构建工具**: Makefile, CMake, Just, Task
 - **测试工具**: Postman, K6
 - **调试分析**: pprof, gdb, delve, goref, go-size-analyzer
 - **安全扫描**: Trivy
