@@ -1,24 +1,51 @@
 # 排除版本控制和IDE文件
 .git/
+.gitignore
+.gitattributes
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
 
 # 排除Hugo缓存和临时目录
 /resources/_gen/
 /public/
+.hugo_build.lock
 
 # 排除环境文件和敏感数据
 .env
+.env.local
+.env.*.local
 
-# 排除操作系统无关文件
+# 排除构建和部署相关文件
 Dockerfile
+dockerfile
 .dockerignore
+docker-compose.yaml
+docker-compose.yml
+release.sh
 
-# 排除Markdown和文档
+# 排除文档和说明文件
 README.md
+readme.md
 LICENSE
+license
 
-# act 测试脚本配置
+# 排除测试和配置文件
 .actrc
-
 .chglog
+*.log
+.DS_Store
+Thumbs.db
+.tmp/
+.cache/
+
+# 排除包管理器文件
+node_modules/
+npm-debug.log*
+
+# 排除其他临时文件
+*.bak
+*.old
+*.orig

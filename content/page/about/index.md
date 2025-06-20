@@ -102,7 +102,13 @@ menu:
 ### 编程语言
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=go,python,cpp,c,ts,lua" title="Go, Python, C++, C, Typescript, Lua"/>
+<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 </p>
 
 - **精通**: Go (运行时机制, 并发模型, 性能优化)
@@ -112,7 +118,14 @@ menu:
 ### 后端开发
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=nginx,postgresql,redis"/>
+<img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis"/>
+<img src="https://img.shields.io/badge/gRPC-4285F4?style=for-the-badge&logo=grpc&logoColor=white" alt="gRPC"/>
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
+<img src="https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white" alt="MinIO"/>
+<img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=websocket&logoColor=white" alt="WebSocket"/>
+<img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white" alt="MQTT"/>
 </p>
 
 - **微服务框架**: Go-Zero, Kratos, gRPC, kitex, Gofr
@@ -127,16 +140,33 @@ menu:
 
 ### 高性能开发
 
-- **SIMD**: highway
+<p align="center">
+<img src="https://img.shields.io/badge/OpenMP-0071C5?style=for-the-badge&logo=openmp&logoColor=white" alt="OpenMP"/>
+<img src="https://img.shields.io/badge/Intel-0071C5?style=for-the-badge&logo=intel&logoColor=white" alt="Intel SIMD"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
+<img src="https://img.shields.io/badge/Apache%20Arrow-E25A1C?style=for-the-badge&logo=apache&logoColor=white" alt="Apache Arrow"/>
+</p>
+
+- **SIMD**: highway, immintrin
 - **并行计算**: OpenMP
-- **I/O**: io_uring, epoll
-- **文件系统开发**: FUSE
+- **I/O**: io_uring, epoll, arrow
 - **内存优化**: Memory Pool, Object Reuse, zero-copy
 
 ### 云原生开发
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,grafana,prometheus,githubactions,terraform,ansible"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
+<img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana"/>
+<img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
+<img src="https://img.shields.io/badge/Terraform-7C3AED?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"/>
+<img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible"/>
+<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" alt="ArgoCD"/>
+<img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" alt="Helm"/>
+<img src="https://img.shields.io/badge/Istio-466BB0?style=for-the-badge&logo=istio&logoColor=white" alt="Istio"/>
+<img src="https://img.shields.io/badge/Cilium-F8C517?style=for-the-badge&logo=cilium&logoColor=black" alt="Cilium"/>
+<img src="https://img.shields.io/badge/Podman-892CA0?style=for-the-badge&logo=podman&logoColor=white" alt="Podman"/>
 </p>
 
 - **容器编排**: Kubernetes, Docker Compose
@@ -150,16 +180,37 @@ menu:
 ### 客户端开发
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=qt,vue"/>
+<img src="https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="Qt"/>
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue"/>
 </p>
 
 - **桌面开发**: Qt
 - **Web 开发**: Vue
 
+### 大数据与数据工程
+
+<p align="center">
+<img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white" alt="Apache Spark"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+<img src="https://img.shields.io/badge/Polars-CD792C?style=for-the-badge&logo=polars&logoColor=white" alt="Polars"/>
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+</p>
+
+- **数据处理**: Apache Spark
+- **数据科学**: Pandas, NumPy, Numba, Polars
+
 ### 工具与辅助技术
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=cmake,postman,git"/>
+<img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake"/>
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+<img src="https://img.shields.io/badge/Make-427819?style=for-the-badge&logo=gnu&logoColor=white" alt="Make"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+<img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux"/>
+<img src="https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell"/>
 </p>
 
 - **版本管理**: Git
@@ -169,6 +220,14 @@ menu:
 - **安全扫描**: Trivy
 
 ## 📚 持续学习
+
+<p align="center">
+<img src="https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white" alt="WebAssembly"/>
+<img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
+<img src="https://img.shields.io/badge/eBPF-FF6600?style=for-the-badge&logo=ebpf&logoColor=white" alt="eBPF"/>
+<img src="https://img.shields.io/badge/AI-FF6B6B?style=for-the-badge&logo=openai&logoColor=white" alt="AI"/>
+<img src="https://img.shields.io/badge/Edge%20Computing-00D4AA?style=for-the-badge&logo=edge&logoColor=white" alt="Edge Computing"/>
+</p>
 
 我始终保持对新兴技术的关注:
 
@@ -180,7 +239,3 @@ menu:
 
 > [!TIP]
 > 如果您对云原生技术, 高性能系统设计或自动化部署实践有任何问题或合作意向, 请随时联系我！
-
-## 学习目标
-
-- [ ]
