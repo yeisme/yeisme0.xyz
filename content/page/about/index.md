@@ -67,6 +67,8 @@ menu:
 
 ## 💪 专业能力
 
+以下是我掌握的专业技能和技术栈等, 涵盖了云原生基础设施, Golang 开发, DevOps 自动化, AI Agent 开发等多个领域:
+
 ### Golang 开发与性能优化
 
 - 深入理解 Golang 运行时机制，擅长并发模型与内存管理，熟练运用 sync 库进行并发编程
@@ -114,6 +116,19 @@ menu:
 - **精通**: Go (运行时机制, 并发模型, 性能优化)
 - **熟悉**: Python (Web 开发, ASGI 服务器开发), C++/C (系统编程, CGO 扩展)
 - **了解**: TypeScript, lua
+
+### **AI 开发**
+
+<p align="center">
+<img src="https://img.shields.io/badge/LangChain-8A2BE2?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDg2IDIgMiA2LjQ4NiAyIDEyczQuNDg2IDEwIDEwIDEwIDEwLTQuNDg2IDEwLTEwUzE3LjUxNCAyIDEyIDJ6bTcgMTBBNyA3IDAgMCAxNSA1YTYuOTYgNi45NiAwIDAxMi4wNS00Ljg5QTcgNyAwIDAxMTkgMTJ6bS03IDFhMSAxIDAgMSAxIDEtMWMwIC41NTItLjQ0OCAxLTEgMXptLTQgMGEzIDMgMCAxIDAtNiAwYTMgMyAwIDAgMCA2IDB6Ii8+PC9zdmc+" alt="LangChain"/>
+<img src="https://img.shields.io/badge/LangGraph-F06529?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMCAxOEgydi0yaDh2Mm0xMi0zdi0yaC01djJtMC00VjloNXYybTAtNFY1aDV2Mm0tNyA0aC0ydi0yaDJtMC00aC0ydi0yaDJtLTkgOGgtMnYtMmgybTAtNGgtMnYtMmgybS00IDRoLTJ2LTJoMm0wLTRoLTJ2LTJoMiIvPjwvc3ZnPg==" alt="LangGraph"/>
+<img src="https://img.shields.io/badge/Chroma-8A2BE2?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDg2IDIgMiA2LjQ4NiAyIDEyczQuNDg2IDEwIDEwIDEwIDEwLTQuNDg2IDEwLTEwUzE3LjUxNCAyIDEyIDJ6bTAgMThjLTQuNDEgMC04LTMuNTktOC04czMuNTktOCA4IDggOCAzLjU5IDggOC0zLjU5IDgtOCA4eiIvPjxjaXJjbGUgZmlsbD0id2hpdGUiIGN4PSIxMiIgY3k9IjEyIiByPSI0Ii8+PC9zdmc+" alt="Chroma"/>
+<img src="https://img.shields.io/badge/Hugging%20Face-FFD000?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+</p>
+
+- **Agent 框架**: LangChain, LangGraph
+- **向量数据库**: Chroma
+- **模型平台**: Hugging Face
 
 ### 后端开发
 
@@ -182,9 +197,10 @@ menu:
 <p align="center">
 <img src="https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white" alt="Qt"/>
 <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue"/>
+<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter"/>
 </p>
 
-- **桌面开发**: Qt
+- **桌面开发**: Qt, Flutter
 - **Web 开发**: Vue
 
 ### 大数据与数据工程
@@ -235,7 +251,6 @@ menu:
 - 基于 WebAssembly 的云原生应用开发
 - Rust 在系统编程中的应用
 - eBPF 技术在可观测性和网络领域的实践
-- AI Agent 的架构与工程化实践
 
 > [!TIP]
 > 如果您对云原生技术, 高性能系统设计或自动化部署实践有任何问题或合作意向, 请随时联系我！
